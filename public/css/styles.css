@@ -1,0 +1,416 @@
+/*General*/
+* {
+    font-family: 'Roboto';
+}
+
+#print-footer {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    width: auto;
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+}
+
+.btn-primary:hover {
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+.btn-create {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.btn-edit {
+    width: auto;
+    background-color: #6994cc;
+    border: 2px solid #5250f3;
+}
+
+.btn-edit:hover {
+    background-color: #17529e;
+    border-color: #5250f3;
+}
+
+
+.btn-print {
+    width: auto;
+}
+
+#print-button {
+    text-align: center;
+}
+
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+/*forms personalizados*/
+#cpf {
+    width: 200px;
+}
+
+#sale-create-container {
+    margin: auto;
+    width: 850px;
+}
+
+.campo-product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+#sale-create-container .prod {
+    width: 400px;
+    margin-right: 10px;
+}
+
+#sale-create-container .amountprod,
+#sale-create-container .subtprod {
+    margin:0 10px;
+    width: 100px;
+}
+
+#sale-create-container label {
+    padding: 1%;
+}
+
+#sale-create-container #add-campo,
+#sale-create-container .remove-campo {
+    margin: auto;
+}
+
+#sale-create-container #add-campo {
+    background-color: forestgreen;
+}
+
+#sale-create-container .remove-campo {
+    background-color: firebrick;
+}
+
+#form-sale-products-title {
+    margin-top: 10px;
+}
+
+/*Navbar*/
+#navbar img {
+    margin-left: 10px;
+    width: 60px;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover {
+    color: #f2a340;
+}
+
+/*search container*/
+#search-container {
+    background-image: url('/img/motor.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*create page*/
+#create-container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 30px;
+}
+
+#create-container label {
+    font-weight: bold;
+}
+
+#create-container input,
+#create-container select,
+#create-container textarea {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+/*list page*/
+.title-container {
+    margin-top: 10px;
+    width: auto;
+}
+
+.create-button {
+    margin-top: 10px;
+    width: auto;
+}
+
+.button-table-action {
+    margin: 0 5px;
+}
+
+#cod-col {
+    vertical-align: middle;
+    max-width: 50px;
+    text-align: center;
+}
+
+#name-col {
+    vertical-align: middle;
+}
+
+#cpf-col {
+    vertical-align: middle;
+    max-width: 90px;
+    text-align: center;
+}
+
+#contact-col {
+    vertical-align: middle;
+    max-width: 90px;
+    text-align: center;
+}
+
+#action-col {
+    vertical-align: middle;
+    max-width: 150px;
+    text-align: center;
+}
+
+#category-col {
+    vertical-align: middle;
+    max-width: 80px;
+    text-align: center;
+}
+
+#price-col {
+    vertical-align: middle;
+    max-width: 40px;
+    text-align: center;
+}
+
+#amount-col {
+    vertical-align: middle;
+    max-width: 40px;
+    text-align: center;
+}
+
+/*tabela show venda*/
+#amount-sv-col {
+    vertical-align: middle;
+    max-width: 70px;
+    text-align: center;
+}
+
+#product-sv-col {
+    vertical-align: middle;
+    max-width: 300px;
+}
+
+#unity-price-sv-col {
+    vertical-align: middle;
+    max-width: 70px;
+    text-align: center;
+}
+
+#subtotal-sv-col {
+    vertical-align: middle;
+    max-width: 75px;
+    text-align: right;
+}
+
+/* tabela impressão venda*/
+
+.print-sale {
+    max-width: 800px;
+    margin: auto;
+}
+
+.print-sale #product-col {
+    max-width: 300px;
+    text-align: left;
+}
+
+.print-sale #unity-price-col {
+    max-width: 60px;
+    text-align: center;
+}
+
+.print-sale #amount-col {
+    max-width: 50px;
+    text-align: center;
+}
+
+.print-sale #subtotal-col {
+    max-width: 50px;
+    text-align: right;
+}
+
+/*filter sales container*/
+#title-sales-container,
+.date-filter-container,
+.campos-form-filtro {
+    display: flex;
+    padding: 0.1%;
+}
+
+#label-filter-date {
+    margin-top: 6px;
+    width: 120px;
+}
+
+.date-filter-container {
+    width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.campos-form-filtro #label-date-begin {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 110px;
+}
+
+.campos-form-filtro #label-date-end {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 130px;
+}
+
+.campos-form-filtro #button-filter {
+    width: 100px;
+    margin-left: 10px;
+}
+
+#date-begin,
+#date-end {
+    max-width: 130px;
+    max-height: 35px;
+    padding: 0.1%;
+}
+
+#title-sales-container #create-sale-button {
+    margin-left: 10px;
+}
+
+/*tabela list vendas*/
+#vtotal-col,
+#date-col {
+    text-align: center;
+}
+
+/*tabela print-report*/
+.print-report #total-col {
+    text-align: right;
+}
+
+/*show client page*/
+.show-container {
+    width: 800px;
+    margin: auto;
+}
+
+#container {
+    margin-top: 30px;
+}
+
+#container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#container p{
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#container h3,
+#info-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container {
+    margin-top: 30px;
+}
+
+#container ion-icon{
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+/*paginator*/
+#paginator {
+    max-width: 100px;
+    margin: auto;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: #353e48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
